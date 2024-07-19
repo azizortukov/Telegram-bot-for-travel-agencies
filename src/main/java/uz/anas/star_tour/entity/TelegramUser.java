@@ -33,12 +33,7 @@ public class TelegramUser {
     }
 
     public boolean checkForSuperAdmin() {
-        if (phoneNumber.contains("932999949") || phoneNumber.contains("5000968")) {
-            this.role = Role.ADMIN;
-            return true;
-        } else {
-            return false;
-        }
+        return false;
     }
 
     public String getAcceptEditorDetails() {

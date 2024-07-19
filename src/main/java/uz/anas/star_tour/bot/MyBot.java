@@ -7,12 +7,12 @@ import com.pengrad.telegrambot.model.Update;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import uz.anas.star_tour.db.TelegramUserService;
+import uz.anas.star_tour.service.TelegramUserService;
 import uz.anas.star_tour.entity.TelegramUser;
 import uz.anas.star_tour.entity.enums.TelegramState;
-import uz.anas.star_tour.service.AdminBotService;
-import uz.anas.star_tour.service.BotService;
-import uz.anas.star_tour.service.LogService;
+import uz.anas.star_tour.bot_service.AdminBotService;
+import uz.anas.star_tour.bot_service.BotService;
+import uz.anas.star_tour.bot_service.LogService;
 
 @Service
 @RequiredArgsConstructor

@@ -1,12 +1,12 @@
 spring:
   data:
     mongodb:
-      host: your_host
-      database: your_db
+      host: localhost
+      database: StarTourDatabase
       port: 27017
-      username: your_db_username
-      password: your_db_password
-      authentication-database: db_for_auth
+      username: anas
+      password: root123
+      authentication-database: admin
 telegram:
   bot:
-    token: your_tg_bot_token
+    token: 6773325600:AAEqx28Tc4QduN9MG6JR1EIlve5Xdw0luZU

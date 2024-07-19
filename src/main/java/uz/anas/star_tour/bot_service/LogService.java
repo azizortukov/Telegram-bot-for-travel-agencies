@@ -1,4 +1,4 @@
-package uz.anas.star_tour.service;
+package uz.anas.star_tour.bot_service;
 
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.request.SendMessage;

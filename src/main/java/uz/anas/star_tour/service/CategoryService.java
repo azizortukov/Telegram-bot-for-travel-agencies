@@ -1,4 +1,4 @@
-package uz.anas.star_tour.db;
+package uz.anas.star_tour.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ public class CategoryService {
     private final CategoryRepo categoryRepo;
 
     public List<Category> findAll() {
-        return categoryRepo.findAll();
+        return categoryRepo.findALlByOrderByCreatedAt();
     }
 
     public void save(Category newCategory) {

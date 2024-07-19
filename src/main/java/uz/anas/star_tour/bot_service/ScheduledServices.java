@@ -1,19 +1,18 @@
-package uz.anas.star_tour.service;
+package uz.anas.star_tour.bot_service;
 
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.request.SendMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Service;
-import uz.anas.star_tour.db.ApplicationService;
-import uz.anas.star_tour.db.TelegramUserService;
-import uz.anas.star_tour.db.TourService;
 import uz.anas.star_tour.entity.Application;
 import uz.anas.star_tour.entity.TelegramUser;
 import uz.anas.star_tour.entity.Tour;
 import uz.anas.star_tour.entity.enums.RequestStatus;
+import uz.anas.star_tour.service.ApplicationService;
+import uz.anas.star_tour.service.TelegramUserService;
+import uz.anas.star_tour.service.TourService;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,7 +20,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@EnableScheduling
 @Service
 @RequiredArgsConstructor
 public class ScheduledServices {

@@ -1,4 +1,4 @@
-package uz.anas.star_tour.db;
+package uz.anas.star_tour.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,11 +1,11 @@
-package uz.anas.star_tour.service;
+package uz.anas.star_tour.bot_service;
 
 import com.pengrad.telegrambot.model.request.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import uz.anas.star_tour.bot.BotConstant;
-import uz.anas.star_tour.db.CategoryService;
-import uz.anas.star_tour.db.TelegramUserService;
+import uz.anas.star_tour.service.CategoryService;
+import uz.anas.star_tour.service.TelegramUserService;
 import uz.anas.star_tour.entity.Application;
 import uz.anas.star_tour.entity.Category;
 import uz.anas.star_tour.entity.TelegramUser;

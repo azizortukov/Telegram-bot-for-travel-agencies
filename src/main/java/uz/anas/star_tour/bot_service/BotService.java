@@ -1,4 +1,4 @@
-package uz.anas.star_tour.service;
+package uz.anas.star_tour.bot_service;
 
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.CallbackQuery;
@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 import uz.anas.star_tour.bot.BotConstant;
-import uz.anas.star_tour.db.*;
+import uz.anas.star_tour.service.*;
 import uz.anas.star_tour.entity.Application;
 import uz.anas.star_tour.entity.Category;
 import uz.anas.star_tour.entity.TelegramUser;
@@ -61,7 +61,6 @@ public class BotService {
         );
         sendMessage.replyMarkup(keyboardService.categoryBtns());
         currentUser.setState(TelegramState.CATEGORIES);
-        tgBot.execute(sendMessage);
         SendResponse execute = tgBot.execute(sendMessage);
         currentUser.getMessageId().add(execute.message().messageId());
         telegramUserService.updateUser(currentUser);
@@ -84,10 +83,7 @@ public class BotService {
 
     public void sendTourInfo(TelegramUser currentUser, String categoryName, Message message) {
         List<Tour> tours = tourService.getTourByCategoryName(categoryName);
-        if (tours == null) {
-            sendCategoriesClient(currentUser, message);
-            return;
-        } else if (tours.isEmpty()) {
+        if (tours.isEmpty()) {
             SendMessage sendMessage = new SendMessage(currentUser.getChatId(), "Uzur, hozircha bu shaharga " +
                                                                                "tur paket mavjud emas");
             try {

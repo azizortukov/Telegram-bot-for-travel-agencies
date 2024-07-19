@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import uz.anas.star_tour.service.LogService;
+import uz.anas.star_tour.bot_service.LogService;
 
 @Configuration
 @RequiredArgsConstructor
