@@ -1,0 +1,2 @@
+Jul 19, 2024 1:08:44 PM uz.anas.star_tour.service.LogService dataLog
+INFO: New user logged: +998500094068
