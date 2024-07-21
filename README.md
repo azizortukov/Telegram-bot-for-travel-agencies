@@ -43,8 +43,8 @@ MongoDB is lightweight and performs well for small to medium-sized projects like
   - <img src="/src/main/resources/screenshots/client_2.png" style="width:400px;">
 
 ### Operator views:
-  - <img src="/src/main/resources/screenshots/operator_1.png" style="width:400px;">
-  - <img src="/src/main/resources/screenshots/operator_2.png" style="width:400px;">
+  - <img src="/src/main/resources/screenshots/operator_1.jpg" style="width:400px;">
+  - <img src="/src/main/resources/screenshots/operator_2.jpg" style="width:400px;">
 
 ### Editor views:
   - <img src="/src/main/resources/screenshots/editor_1.png" style="width:400px;">
